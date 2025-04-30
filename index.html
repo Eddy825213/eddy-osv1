@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eddy's Profile 🌸</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/885aRAi.jpeg" type="image/x-icon">
+    <meta name="description" content="Eddy's - A teen dev passionate about HTML, CSS, JavaScript, and Python. Explore my projects and stats!">
+    <meta name="keywords" content="Eddy, portfolio, web developer, anime, coding, HTML, CSS, JavaScript, Python, Node.js, full-stack, sakura, Minecraft">
+    <meta name="author" content="Eddy Sakura">
+    <meta property="og:title" content="Eddy's Profile 🌸">
+    <meta property="og:description" content="Yo! I'm Eddy, a teen dev who loves coding and anime. Check out my projects, skills, and sakura-themed portfolio!">
+    <meta property="og:image" content="https://i.imgur.com/BW7ZUkq.webp">
+    <meta property="og:url" content="https://manguonfree.wuaze.com/">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+            <p class="loading-progress">0%</p>
+        </div>
+    </div>
+
+    <div class="lock-screen windows" id="lock-screen-windows">
+        <div class="status">Chill Mode: ON 🌸</div>
+        <div class="lock-time" id="lock-time-windows">--:--:--</div>
+        <div class="lock-date" id="lock-date-windows">04/11/2025</div>
+        <div class="lock-content" id="lock-content-windows">
+            <p class="lock-message">Enter password (hint: eddy)</p>
+            <input type="text" class="lock-input" id="password-input-windows" placeholder="Enter password...">
+            <button class="lock-btn" id="unlock-btn-windows">Open Portal</button>
+        </div>
+    </div>
+
+    <div class="lock-screen mobile" id="lock-screen-mobile">
+        <div class="lock-header">
+            <div class="lock-time" id="lock-time-mobile">--:--:--</div>
+            <div class="lock-date" id="lock-date-mobile">Eddy's World - 04/11/2025</div>
+        </div>
+        <div class="lock-content" id="lock-content-mobile">
+            <p class="lock-message">Enter password or tap to unlock!</p>
+            <input type="text" class="lock-input" id="password-input-mobile" placeholder="Try 'eddy'?">
+            <button class="lock-btn" id="unlock-btn-mobile">Unlock</button>
+        </div>
+    </div>
+
+    <div class="sakura-rain" id="sakura-rain"></div>
+
+    <div class="music-controls">
+        <button id="music-toggle" title="Play/Pause Music">🔊</button>
+        <button id="next-song" title="Next Song">⏭️</button>
+        <button id="playlist-toggle" title="Playlist">🎶</button>
+    </div>
+
+    <div class="playlist-panel" id="playlist-panel">
+        <div class="playlist-content">
+            <div class="playlist-header">
+                <h2>Eddy's Playlist 🎶</h2>
+                <button class="close-playlist" id="close-playlist">X</button>
+            </div>
+            <div class="music-progress">
+                <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+            <div class="playlist-grid" id="playlist-grid"></div>
+        </div>
+    </div>
+
+    <div class="stats-panel" id="stats-panel">
+        <div class="stats-header">
+            <h2>Eddy's Dev Stats</h2>
+            <button class="close-stats" id="close-stats">X</button>
+        </div>
+        <div id="stats-container" class="stats-grid"></div>
+    </div>
+
+    <div class="status-bar">
+        <span id="dev-mood">🌸 Eddy is loading...</span>
+        <span id="dev-song">🎵 Loading...</span>
+        <span id="dev-net">📡 Online</span>
+    </div>
+
+    <div class="container">
+        <div class="character-sidebar">
+            <div class="character-portrait" id="character-portrait"></div>
+            <h1 class="character-name">Eddy <span class="beginner-badge">DEV</span></h1>
+            <p class="character-title">Super Nova</p>
+            <div class="dialogue-box">
+                <p class="dialogue-text">Yo! I'm Eddy, love coding but still learning!</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://facebook.com/hoang.eddy14" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+            <button class="btn" id="toggle-stats">View Stats</button>
+            <a href="#" class="btn">Projects</a>
+            <button class="btn" id="toggle-theme">Switch Theme 🌸</button>
+        </div>
+
+        <div class="main-content">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I'm Eddy, a passionate coder. I love coding, listening to chill music, and snacking at midnight. Let's explore my world!</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div id="skills-container" class="stats-grid"></div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>Love Day Counter</h3>
+                    <p>A sweet and romantic day-counting app.</p>
+                    <a href="#" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h3>Profile</h3>
+                    <p>My personal page, showcasing my style.</p>
+                    <a href="#" target="_blank" class="btn">View Profile</a>
+                </div>
+            </section>
+
+            <section id="quests">
+                <h2>Quests</h2>
+                <div class="quest-item">
+                    <h3>Learn a New Framework</h3>
+                    <p>Explore React or Vue to level up my skills.</p>
+                </div>
+                <div class="quest-item">
+                    <h3>Complete a Personal Project</h3>
+                    <p>Build a unique web application.</p>
+                </div>
+            </section>
+
+            <section id="timeline">
+                <h2>Timeline</h2>
+                <div class="timeline-item">
+                    <p id="live-time">--:--:--</p>
+                    <p id="live-desc">Loading status...</p>
+                    <p id="live-date">04/11/2025</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Eddy. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Eddy825213" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://facebook.com/hoang.eddy14" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+    </footer>
+
+    <audio id="music-player" style="display: none;"></audio>
+
+    <noscript>
+        <p style="color: red; text-align: center;">
+            ⚠️ Your browser does not support JavaScript or it is disabled.<br>
+            Please enable JavaScript to continue!
+        </p>
+    </noscript>
+ <script src="./anti/antidev.js"></script>
+ <script src="./assets/main.js"></script>
+</body>
+</html>
