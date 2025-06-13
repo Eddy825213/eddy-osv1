@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eddy's Profile 🌸</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/885aRAi.jpeg" type="image/x-icon">
+    <meta name="description" content="Eddy's - A teen dev passionate about HTML, CSS, JavaScript, and Python. Explore my projects and stats!">
+    <meta name="keywords" content="Eddy, portfolio, web developer, anime, coding, HTML, CSS, JavaScript, Python, Node.js, full-stack, sakura, Minecraft">
+    <meta name="author" content="Eddy Sakura">
+    <meta property="og:title" content="Eddy's Profile 🌸">
+    <meta property="og:description" content="Yo! I'm Eddy, a teen dev who loves coding and anime. Check out my projects, skills, and sakura-themed portfolio!">
+    <meta property="og:image" content="https://i.imgur.com/BW7ZUkq.webp">
+    <meta property="og:url" content="https://manguonfree.wuaze.com/">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Rowdies|ZCOOL+QingKe+HuangYou|Concert+One&display=swap">
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+            <p class="loading-progress">0%</p>
+        </div>
+    </div>
+
+    <div class="lock-screen windows" id="lock-screen-windows">
+        <div class="status">Chill Mode: ON 🌸</div>
+        <div class="lock-time" id="lock-time-windows">--:--:--</div>
+        <div class="lock-date" id="lock-date-windows">04/11/2025</div>
+        <div class="lock-content" id="lock-content-windows">
+            <p class="lock-message">Enter password (hint: eddy)</p>
+            <input type="text" class="lock-input" id="password-input-windows" placeholder="Enter password...">
+            <button class="lock-btn" id="unlock-btn-windows">Open Portal</button>
+        </div>
+    </div>
+
+    <div class="lock-screen mobile" id="lock-screen-mobile">
+        <div class="lock-header">
+            <div class="lock-time" id="lock-time-mobile">--:--:--</div>
+            <div class="lock-date" id="lock-date-mobile">Eddy's World - 04/11/2025</div>
+        </div>
+        <div class="lock-content" id="lock-content-mobile">
+            <p class="lock-message">Enter password or tap to unlock!</p>
+            <input type="text" class="lock-input" id="password-input-mobile" placeholder="Try 'eddy'?">
+            <button class="lock-btn" id="unlock-btn-mobile">Unlock</button>
+        </div>
+    </div>
+
+    <div class="sakura-rain" id="sakura-rain"></div>
+
+    <div class="music-controls">
+        <button id="music-toggle" title="Play/Pause Music">🔊</button>
+        <button id="next-song" title="Next Song">⏭️</button>
+        <button id="playlist-toggle" title="Playlist">🎶</button>
+    </div>
+
+    <div class="playlist-panel" id="playlist-panel">
+        <div class="playlist-content">
+            <div class="playlist-header">
+                <h2>Eddy's Playlist 🎶</h2>
+                <button class="close-playlist" id="close-playlist">X</button>
+            </div>
+            <div class="music-progress">
+                <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+            <div class="playlist-grid" id="playlist-grid"></div>
+        </div>
+    </div>
+
+    <div class="stats-panel" id="stats-panel">
+        <div class="stats-header">
+            <h2>Eddy's Dev Stats</h2>
+            <button class="close-stats" id="close-stats">X</button>
+        </div>
+        <div id="stats-container" class="stats-grid"></div>
+    </div>
+
+    <div class="status-bar">
+        <span id="dev-mood">🌸 Eddy is loading...</span>
+        <span id="dev-song">🎵 Loading...</span>
+        <span id="dev-net">📡 Online</span>
+    </div>
+
+    <div class="container">
+        <div class="character-sidebar">
+            <div class="character-portrait" id="character-portrait"></div>
+            <h1 class="character-name">Eddy <span class="beginner-badge">STUDENT</span></h1>
+            <p class="character-title">Super Nova</p>
+            <div class="dialogue-box">
+                <p class="dialogue-text">Yo! I'm Eddy, love coding but still learning!</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://facebook.com/hoang.eddy14" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+            <button class="btn" id="toggle-stats">View Stats</button>
+            <a href="#" class="btn">Projects</a>
+            <button class="btn" id="toggle-theme">Switch Theme 🌸</button>
+        </div>
+        <div class="main-content">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I'm Eddy, a passionate coder. I love coding, listening to chill music, and snacking at midnight. Let's explore my world!</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div id="skills-container" class="stats-grid"></div>
+            </section>
+
+            
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>Love Day Counter</h3>
+                    <p>A sweet and romantic day-counting app.</p>
+                    <a href="#" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h3>Music</h3>
+                    <p>My personal page, showcasing my style music.</p>
+                    <a href="./music" target="_blank" class="btn">View Profile</a>
+                </div>
+            </section>
+
+            <section id="quests">
+                <h2>Quests</h2>
+                <div class="quest-item">
+                    <h3>Learn a New Framework</h3>
+                    <p>Explore React or Vue to level up my skills.</p>
+                </div>
+                <div class="quest-item">
+                    <h3>Complete a Personal Project</h3>
+                    <p>Build a unique web application.</p>
+                </div>
+            </section>
+
+            <section id="timeline">
+                <h2>Timeline</h2>
+                <div class="timeline-item">
+                    <p id="live-time">--:--:--</p>
+                    <p id="live-desc">Loading status...</p>
+                    <p id="live-date">04/11/2025</p>
+                </div>
+            </section>
+            <section id="device-info">
+                <h2>Your Device</h2>
+                <p>Browser: <span id="browserInfo">Loading...</span></p>
+                <p>Version: <span id="versionInfo">Loading...</span></p>
+                <p>Device: <span id="deviceInfo">Loading...</span></p>
+                <p>Information from the device used by the browser to match your browser and device</p>
+            </section>
+            <section id="privacy-policy">
+                <h2>Privacy Policy</h2>
+                <p>Your privacy is important to me. This website collects minimal data, such as browser and device information, to enhance your experience. I do not share your data with third parties. For any questions, feel free to reach out via the contact section below.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Want to collaborate or just say hi? Reach out to me!</p>
+                <ul>
+                    <li>Here: <a href="https://facebook.com/hoang.eddy14" target="_blank">Click here</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Eddy. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Eddy825213" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://facebook.com/hoang.eddy14" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+    </footer>
+
+    <audio id="music-player" style="display: none;"></audio>
+
+    <noscript>
+        <p style="color: red; text-align: center;">
+            ⚠️ Your browser does not support JavaScript or it is disabled.<br>
+            Please enable JavaScript to continue!
+        </p>
+    </noscript>
+    
+    <script src="./anti/antidev.js"></script> 
+    <script src="./assets/main.js"></script>
+    <script>
+        // Browser and Device Detection
+        function detectBrowserAndDevice() {
+            const ua = navigator.userAgent;
+            let browser = "Unknown";
+            let version = "Unknown";
+            let device = "Unknown";
+
+            // Detect browser and version
+            if (ua.includes("Chrome") && !ua.includes("Edg") && !ua.includes("OPR")) {
+                browser = "Google Chrome";
+                const match = ua.match(/Chrome\/([\d.]+)/);
+                version = match ? match[1] : "Unknown";
+            } else if (ua.includes("Firefox")) {
+                browser = "Mozilla Firefox";
+                const match = ua.match(/Firefox\/([\d.]+)/);
+                version = match ? match[1] : "Unknown";
+            } else if (ua.includes("Safari") && !ua.includes("Chrome")) {
+                browser = "Apple Safari";
+                const match = ua.match(/Version\/([\d.]+)/);
+                version = match ? match[1] : "Unknown";
+            } else if (ua.includes("Edg")) {
+                browser = "Microsoft Edge";
+                const match = ua.match(/Edg\/([\d.]+)/);
+                version = match ? match[1] : "Unknown";
+            } else if (ua.includes("Opera") || ua.includes("OPR")) {
+                browser = "Opera";
+                const match = ua.match(/(Opera|OPR)\/([\d.]+)/);
+                version = match ? match[2] : "Unknown";
+            }
+
+            // Detect device
+            if (/Mobi|Android|iPhone|iPad|iPod/.test(ua)) {
+                device = "Mobile or Tablet";
+            } else {
+                device = "Desktop";
+            }
+
+            // Update DOM
+            document.getElementById("browserInfo").textContent = browser;
+            document.getElementById("versionInfo").textContent = version;
+            document.getElementById("deviceInfo").textContent = device;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            detectBrowserAndDevice();
+        });
+    </script>
+    <script>
+        (function(){
+            function c(){
+                var b = a.contentDocument || a.contentWindow.document;
+                if(b){
+                    var d = b.createElement('script');
+                    d.innerHTML = "window.__CF$cv$params={r:'93d98b997c3753b4',t:'MTc0Njg4MTI0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    b.getElementsByTagName('head')[0].appendChild(d);
+                }
+            }
+            if(document.body){
+                var a = document.createElement('iframe');
+                a.height = 1;
+                a.width = 1;
+                a.style.position = 'absolute';
+                a.style.top = 0;
+                a.style.left = 0;
+                a.style.border = 'none';
+                a.style.visibility = 'hidden';
+                document.body.appendChild(a);
+                if('loading' !== document.readyState) c();
+                else if(window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+                else {
+                    var e = document.onreadystatechange || function(){};
+                    document.onreadystatechange = function(b){
+                        e(b);
+                        if('loading' !== document.readyState){
+                            document.onreadystatechange = e;
+                            c();
+                        }
+                    }
+                }
+            }
+        })();
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93d9df739f1cbf73',t:'MTc0Njg4NDY4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

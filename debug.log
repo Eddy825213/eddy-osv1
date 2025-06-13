@@ -1,0 +1,223 @@
+Request received at 2025-05-11 00:02:31 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 0 comments
+Request received at 2025-05-11 00:02:41 from 116.98.247.63
+Database connected successfully
+Method: POST
+Handling POST request
+Raw Input: {"name":"eddy","content":"hi"}
+Name: eddy, Content: hi
+Generated UUID: 52567f35-0baf-4a39-a7bf-1b9187197b53
+Comment inserted successfully
+Session updated with last_comment_time: 1746936161
+Request received at 2025-05-11 00:02:41 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 0 comments
+Request received at 2025-05-11 00:02:54 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 0 comments
+Request received at 2025-05-11 00:04:48 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 0 comments
+Request received at 2025-05-11 00:05:55 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 1 comments
+Request received at 2025-05-11 00:12:30 from 116.98.247.63
+Generated new admin code: 8de2a828af092ece75ce2ef98883e088
+Database connected successfully
+Client IP: 116.98.247.63
+Method: GET
+Fetched 0 comments
+Request received at 2025-05-11 00:13:26 from 116.98.247.63
+Loaded admin code: 8de2a828af092ece75ce2ef98883e088
+Database connected successfully
+Client IP: 116.98.247.63
+Method: GET
+Fetched 0 comments
+Request received at 2025-05-11 00:13:30 from 116.98.247.63
+Loaded admin code: 8de2a828af092ece75ce2ef98883e088
+Database connected successfully
+Client IP: 116.98.247.63
+Method: GET
+Fetched 0 comments
+Request received at 2025-05-11 00:13:48 from 116.98.247.63
+Loaded admin code: 8de2a828af092ece75ce2ef98883e088
+Database connected successfully
+Client IP: 116.98.247.63
+Method: POST
+Handling POST request
+Raw Input: {"name":"eddy","content":"hi"}
+Name: eddy, Content: hi
+Generated UUID: 5825a74b-75d7-4574-aa4e-f5d62a7c8c0d
+Comment inserted successfully
+Session updated with last_comment_time: 1746936828
+Request received at 2025-05-11 00:13:48 from 116.98.247.63
+Loaded admin code: 8de2a828af092ece75ce2ef98883e088
+Database connected successfully
+Client IP: 116.98.247.63
+Method: GET
+Fetched 1 comments
+Request received at 2025-05-11 04:35:49 from 116.98.247.63
+Loaded admin code: 8de2a828af092ece75ce2ef98883e088
+Database connected successfully
+Client IP: 116.98.247.63
+Method: GET
+Fetched 1 comments
+Request received at 2025-05-11 04:36:01 from 116.98.247.63
+Loaded admin code: 8de2a828af092ece75ce2ef98883e088
+Database connected successfully
+Client IP: 116.98.247.63
+Method: POST
+Handling POST request
+Raw Input: {"name":"hi","content":"eddy"}
+Name: hi, Content: eddy
+Generated UUID: 6e11a0f4-cdce-4541-a9dc-b81b269b2e94
+Comment inserted successfully
+Session updated with last_comment_time: 1746952561
+Request received at 2025-05-11 04:36:01 from 116.98.247.63
+Loaded admin code: 8de2a828af092ece75ce2ef98883e088
+Database connected successfully
+Client IP: 116.98.247.63
+Method: GET
+Fetched 2 comments
+Request received at 2025-05-11 04:40:07 from 116.98.247.63
+Loaded admin code: 8de2a828af092ece75ce2ef98883e088
+Database connected successfully
+Client IP: 116.98.247.63
+Method: GET
+Fetched 2 comments
+Request received at 2025-05-11 04:42:43 from 116.98.247.63
+Loaded admin code: 8de2a828af092ece75ce2ef98883e088
+Database connected successfully
+Client IP: 116.98.247.63
+Method: GET
+Fetched 2 comments
+Request received at 2025-05-11 04:44:24 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:38:58 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:39:04 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:44:04 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:44:26 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:44:26 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:44:40 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:46:26 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:46:36 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:46:36 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:47:37 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:47:37 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:48:15 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:48:15 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:50:45 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:50:45 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:50:56 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:50:58 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:57:29 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 09:57:31 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:02:28 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:03:05 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:03:13 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:06:07 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:06:07 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:06:42 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:06:51 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:07:31 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:07:31 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:10:15 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments
+Request received at 2025-05-11 10:13:05 from 116.98.247.63
+Database connected successfully
+Method: GET
+Fetched 3 comments

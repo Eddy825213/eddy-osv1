@@ -1,0 +1,20 @@
+[
+    {
+        "user_email": "eddy@profile.com",
+        "name": "Ho\u00e0ng M\u1ea1nh Qu\u1ef3nh",
+        "age": "15",
+        "hometown": "Qu\u1ea3ng B\u00ecnh",
+        "occupation": "H\u1ecdc Sinh",
+        "hobbies": "Code",
+        "profile_image": "https:\/\/i.imgur.com\/885aRAi.jpeg",
+        "logo": "https:\/\/i.imgur.com\/885aRAi.jpeg",
+        "bio": "hi",
+        "description": "hello",
+        "about_me": "i&#38;#38;#38;#39;m ",
+        "posts": [
+            "my name is eddy \\n maybe i love u"
+        ],
+        "created_at": "2025-05-26 12:00:55",
+        "updated_at": "2025-05-26 12:38:40"
+    }
+]

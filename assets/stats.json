@@ -1,0 +1,29 @@
+{
+    "skills": [
+      {
+        "name": "HTML/CSS",
+        "icon": "fas fa-code",
+        "level": 90,
+        "title": "Sakura Master"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js",
+        "level": 85,
+        "title": "Meme Wizard"
+      },
+      {
+        "name": "Node.js",
+        "icon": "fab fa-node-js",
+        "level": 80,
+        "title": "Backend Ninja"
+      },
+      {
+        "name": "Python",
+        "icon": "fab fa-python",
+        "level": 75,
+        "title": "Code Samurai"
+      }
+    ]
+  }
+  

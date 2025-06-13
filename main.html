@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eddy's Profile 🌸</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/885aRAi.jpeg" type="image/x-icon">
+    <meta name="description" content="Eddy's  - A teen dev  HTML, CSS, JavaScript, and Python with a vs code . Explore my coding projects and developer stats!">
+    <meta name="keywords" content="Eddy , portfolio, web developer, anime, coding, HTML, CSS, JavaScript, Python, Node.js, full-stack, sakura, Minecraft , Eddy ">
+    <meta name="author" content="Eddy Sakura">
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Eddy's  Profile 🌸">
+    <link rel="shortcut icon" href="https://i.imgur.com/885aRAi.jpeg" type="image/x-icon">
+    <meta property="og:description" content="Yo! I'm Eddy, a teen dev vibin' with code and anime. Check out my projects, skills, and sakura-themed portfolio!">
+    <meta property="og:image" content="https://i.imgur.com/BW7ZUkq.webp">
+    <meta property="og:url" content="https://manguonfree.wuaze.com/">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://api-eddysus.infy.uk/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Eddy's Realm...</p>
+            <p class="loading-progress">0%</p>
+        </div>
+    </div>
+
+    <!-- Lock Screen Windows (Desktop) -->
+    <div class="lock-screen windows" id="lock-screen-windows">
+        <div class="status">Chill Mode: ON 🌸</div>
+        <div class="lock-time" id="lock-time-windows">--:--:--</div>
+        <div class="lock-date" id="lock-date-windows">11/04/2025</div>
+        <div class="lock-content" id="lock-content-windows">
+            <p class="lock-message">Nhập mật khẩu (hint: thứ Eddy yêu nhất!)</p>
+            <input type="text" class="lock-input" id="password-input-windows" placeholder="Nhập mật khẩu...">
+            <button class="lock-btn" id="unlock-btn-windows">Mở Cổng</button>
+        </div>
+    </div>
+
+    <!-- Lock Screen Mobile -->
+    <div class="lock-screen mobile" id="lock-screen-mobile">
+        <div class="lock-header">
+            <div class="lock-time" id="lock-time-mobile">--:--:--</div>
+            <div class="lock-date" id="lock-date-mobile">Eddy's Realm - 11/04/2025</div>
+        </div>
+        <div class="lock-content" id="lock-content-mobile">
+            <p class="lock-message">Nhập mật khẩu hoặc nhấn để mở!</p>
+            <input type="text" class="lock-input" id="password-input-mobile" placeholder="Thử 'eddy'?">
+            <button class="lock-btn" id="unlock-btn-mobile">Unlock</button>
+        </div>
+    </div>
+
+    <!-- Music Toggle -->
+    <div class="music-toggle" id="music-toggle">🔊</div>
+
+    <!-- Sakura Rain -->
+    <div class="sakura-rain" id="sakura-rain"></div>
+
+    <div class="container">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span id="dev-mood">🌸 Eddy is loading...</span>
+            <span id="dev-song">🎵 Loading...</span>
+            <span id="dev-net">📡 Online</span>
+        </div>
+
+        
+        <audio id="music-player"></audio>
+        <!-- Character Sidebar -->
+        <div class="character-sidebar">
+            <div class="character-portrait" id="character-portrait"></div>
+            <h1 class="character-name">Eddy <span class="beginner-badge">DEV</span></h1>
+            <p class="character-title">Code Wizard / Meme Lord</p>
+            <div class="dialogue-box">
+                <p class="dialogue-text">"Yo! I'm Eddy, the coding weeb who turns coffee into bug-free applications! Wanna see my developer stats?"</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/WusThanhDieu" target="_blank">🐙</a>
+                <a href="https://tiktok.com" target="_blank">🎵</a>
+                <a href="https://discord.com" target="_blank">💬</a>
+            </div>
+            <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">My Projects</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <section id="about">
+                <h2>About Me 😜</h2>
+                <p>Yo, I'm Eddy, a teen dev vibin' with Python, JS, and dank memes! I whip up apps that hit different and designs that yeet boring outta here. HTML, CSS, Node.js? That's my full-stack tea. Catch me on GitHub droppin' code or Discord spamming 🐸 stickers!</p>
+                <p>When I ain't coding, I'm chillin' with lo-fi, scrollin' TikTok, or flexin' my sakura aesthetic. Let's code some chaos, fam! 🌸</p>
+                
+            </section>
+            
+            <section id="skills">
+                <h2>My Skills 🌟</h2>
+                <div class="stat-item">
+                    <div class="stat-name"><i class="fas fa-code"></i> HTML/CSS</div>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width: 90%"></div>
+                    </div>
+                    <div class="stat-value">Lv. 90 - Sakura Master</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-name"><i class="fab fa-js"></i> JavaScript</div>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width: 85%"></div>
+                    </div>
+                    <div class="stat-value">Lv. 85 - Meme Wizard</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-name"><i class="fab fa-node-js"></i> Node.js</div>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width: 80%"></div>
+                    </div>
+                    <div class="stat-value">Lv. 80 - Backend Ninja</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-name"><i class="fab fa-python"></i> Python</div>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width: 75%"></div>
+                    </div>
+                    <div class="stat-value">Lv. 75 - Code Samurai</div>
+                </div>
+            </section>     
+            <section id="projects">
+                <h2>My Projects 🚀</h2>
+                <div class="project-item">
+                    <h3>love day countp</h3>
+                    <p>love u!</p>
+                    <a href="https://yeuemvaio.great-site.net/" target="_blank" class="btn">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>Profile</h3>
+                    <p>just profile create by eddy and AI!</p>
+                    <a href="./eddy.html" target="_blank" class="btn">View on GitHub</a>
+                </div>
+            </section>
+            <section id="goals">
+                <h2>Current Quest 🎯</h2>
+                <p>Building the ultimate anime-themed social platform while battling the evil forces of legacy code and Internet Explorer users.</p>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoang.eddy14%2Fposts%2Fpfbid0VsdJL2MREpjfBEUsqbERp6bFHU25nzxoqU4tMfYs4ZvEhdrENQUps9HDrnCpFn5rl&show_text=true&width=500" width="500" height="207" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </section>
+            <section id="timeline">
+                <h2>Eddy's Code Chronicles 🌸</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">2025</span>
+                        <div class="timeline-content">
+                            <p>Khám phá HTML/CSS, tạo trang web đầu tiên với 1000 lỗi!</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">future</span>
+                        <div class="timeline-content">
+                            <p>Chinh phục full-stack, xây web OS!</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date" id="live-date">11/04/2025</span>
+                        <div class="timeline-content">
+                            <p><span id="live-time">--:--:--</span> - <span id="live-desc">Đang load trạng thái...</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- RPG Stats Panel -->
+    <button class="btn btn-rpg" id="toggle-stats">
+        <i class="fas fa-chart-bar"></i> View Stats
+    </button>
+    <button class="btn btn-theme" id="toggle-theme">Chuyển Theme 🌸</button>
+    <div class="stats-panel" id="stats-panel">
+        <div class="stats-header">
+            <h2>Eddy's Developer Stats</h2>
+            <button class="close-stats" id="close-stats">X</button>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-name"><i class="fas fa-code"></i> HTML/CSS</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 90%"></div>
+                </div>
+                <div class="stat-value">Lv. 90 - Sakura Master</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-name"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 85%"></div>
+                </div>
+                <div class="stat-value">Lv. 85 - Meme Wizard</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-name"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 80%"></div>
+                </div>
+                <div class="stat-value">Lv. 80 - Backend Ninja</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-name"><i class="fab fa-python"></i> Python</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 75%"></div>
+                </div>
+                <div class="stat-value">Lv. 75 - Code Samurai</div>
+            </div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        const loadingProgress = document.querySelector('.loading-progress');
+
+        let progress = 0;
+        const progressInterval = setInterval(() => {
+            progress += Math.random() * 10;
+            if (progress > 100) progress = 100;
+            loadingProgress.textContent = `${Math.floor(progress)}%`;
+
+            if (progress >= 100) {
+                clearInterval(progressInterval);
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                    initializeApp();
+                }, 500);
+            }
+        }, 100);
+
+        preloadAssets();
+    });
+
+    function preloadAssets() {
+        const assets = [
+            'https://i.imgur.com/BW7ZUkq.webp',
+            'https://i.imgur.com/v6jgeDg.png',
+            'https://minecraft.wiki/images/Grass_Block_%28top_texture%29_JE5.png',
+            'https://minecraft.wiki/images/Gravel_%28texture%29_JE5_BE4.png',
+            'https://minecraft.wiki/images/Steve_%28texture%29_JE6.png'
+        ];
+
+        assets.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    }
+
+    function initializeApp() {
+        const lockScreenWindows = document.getElementById('lock-screen-windows');
+        const lockScreenMobile = document.getElementById('lock-screen-mobile');
+        const lockContentWindows = document.getElementById('lock-content-windows');
+        const lockContentMobile = document.getElementById('lock-content-mobile');
+        const unlockBtnWindows = document.getElementById('unlock-btn-windows');
+        const unlockBtnMobile = document.getElementById('unlock-btn-mobile');
+        const passwordInputWindows = document.getElementById('password-input-windows');
+        const passwordInputMobile = document.getElementById('password-input-mobile');
+        const lockTimeWindows = document.getElementById('lock-time-windows');
+        const lockDateWindows = document.getElementById('lock-date-windows');
+        const lockTimeMobile = document.getElementById('lock-time-mobile');
+        const lockDateMobile = document.getElementById('lock-date-mobile');
+
+        document.body.classList.add('locked');
+
+        function updateLockTime() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('vi-VN');
+            const dateStr = now.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric' }).replace(/\//g, '/');
+            lockTimeWindows.textContent = timeStr;
+            lockDateWindows.textContent = dateStr;
+            lockTimeMobile.textContent = timeStr;
+            lockDateMobile.textContent = `Eddy's Realm - ${dateStr}`;
+        }
+
+        setInterval(updateLockTime, 1000);
+        updateLockTime();
+
+        function unlockScreen() {
+            lockScreenWindows.classList.add('hidden');
+            lockScreenMobile.classList.add('hidden');
+            document.body.classList.remove('locked');
+            setTimeout(() => {
+                lockScreenWindows.style.display = 'none';
+                lockScreenMobile.style.display = 'none';
+                initializeMusic();
+                updateTheme(currentTheme);
+            }, 500);
+        }
+
+        function setupLockScreen(screen, input, btn, content) {
+            function checkPassword() {
+                if (input.value.toLowerCase() === 'eddy') {
+                    unlockScreen();
+                } else {
+                    input.value = '';
+                    input.placeholder = 'Sai rồi! Thử lại nhé!';
+                }
+            }
+            btn.addEventListener('click', checkPassword);
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') checkPassword();
+            });
+            screen.addEventListener('click', () => {
+                screen.classList.add('active');
+                content.style.display = 'block';
+            });
+        }
+
+        setupLockScreen(lockScreenWindows, passwordInputWindows, unlockBtnWindows, lockContentWindows);
+        setupLockScreen(lockScreenMobile, passwordInputMobile, unlockBtnMobile, lockContentMobile);
+
+        const toggleThemeBtn = document.getElementById('toggle-theme');
+        let currentTheme = 'default';
+
+        toggleThemeBtn.addEventListener('click', () => {
+            currentTheme = currentTheme === 'default' ? 'minecraft' : 'default';
+            document.body.classList.toggle('minecraft-theme', currentTheme === 'minecraft');
+            toggleThemeBtn.textContent = currentTheme === 'minecraft' ? 'Chuyển Theme ⛏️' : 'Chuyển Theme 🌸';
+            updateTheme(currentTheme);
+        });
+
+        function updateTheme(theme) {
+            const sakuraRain = document.getElementById('sakura-rain');
+            sakuraRain.innerHTML = '';
+
+            const maxSakura = window.innerWidth < 768 ? 10 : 20;
+            let sakuraCount = 0;
+
+            function createSakura() {
+                if (sakuraCount >= maxSakura) return;
+                const sakura = document.createElement('div');
+                sakura.className = 'sakura';
+                sakura.style.left = Math.random() * 100 + 'vw';
+                sakura.style.animationDuration = Math.random() * 3 + 5 + 's';
+                if (theme === 'minecraft') {
+                    sakura.style.background = "url('https://minecraft.wiki/images/Gravel_%28texture%29_JE5_BE4.png') center/cover";
+                    sakura.style.width = '16px';
+                    sakura.style.height = '16px';
+                    sakura.style.animationName = 'blockFall';
+                } else {
+                    sakura.style.background = "url('https://i.imgur.com/mhoZ8zB.png') center/cover";
+                    sakura.style.width = '20px';
+                    sakura.style.height = '20px';
+                    sakura.style.animationName = 'sakuraFall';
+                }
+                sakuraRain.appendChild(sakura);
+                sakuraCount++;
+                setTimeout(() => {
+                    sakura.remove();
+                    sakuraCount--;
+                }, 7000);
+            }
+
+            function animate() {
+                if (sakuraCount < maxSakura) createSakura();
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+
+        function initializeMusic() {
+            const musicToggle = document.getElementById('music-toggle');
+            const musicPlayer = document.getElementById('music-player');
+            let isMusicPlaying = false;
+
+            async function updateMusicTrack() {
+    try {
+        const res = await fetch("https://api.thanhdieu.com/rand-music.php");
+        const data = await res.json();
+        if (data.musicUrl && data.titleTracks) {
+            musicPlayer.src = data.musicUrl;
+            document.getElementById("dev-song").textContent = `🎵 ${data.titleTracks}`;
+            if (isMusicPlaying) {
+                await musicPlayer.play();
+            }
+        }
+    } catch (err) {
+        console.error("Lỗi tải nhạc từ API:", err);
+        document.getElementById("dev-song").textContent = "🎵 Không thể load nhạc";
+    }
+}
+
+
+            function updateMusicTrack() {
+                const randomSong = songs[Math.floor(Math.random() * songs.length)];
+                const songEl = document.getElementById("dev-song");
+                if (songEl) {
+                    songEl.textContent = `🎵 ${randomSong.name} - ${randomSong.artist}`;
+                }
+                musicPlayer.src = randomSong.src;
+                
+                }
+            
+
+musicToggle.addEventListener('click', () => {
+    isMusicPlaying = !isMusicPlaying;
+    musicToggle.textContent = isMusicPlaying ? '🔊' : '🔇';
+    
+    if (isMusicPlaying) {
+        musicPlayer.play().catch(error => {
+            console.error("Lỗi phát nhạc:", error);
+            document.getElementById("dev-song").textContent = "🎵 Lỗi phát nhạc cục bộ";
+        });
+    } else {
+        musicPlayer.pause();
+    }
+});
+                
+           
+
+            // Chuyển bài khi bài hiện tại kết thúc
+           musicPlayer.addEventListener('ended', () => {
+    if (isMusicPlaying) updateMusicTrack();
+});
+
+            // Khởi động với bài ngẫu nhiên
+            updateMusicTrack();
+        }
+
+        const taglines = ['Eddy is me🌸', 'super nova 😈', 'Full-Stack is my dream 💪', 'Encoders and Decoders🚀'];
+        let tagIndex = 0;
+        let charIndex = 0;
+        const taglineElement = document.querySelector('.dialogue-text');
+
+        function typeTagline() {
+            if (charIndex < taglines[tagIndex].length) {
+                taglineElement.textContent += taglines[tagIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeTagline, 100);
+            } else {
+                setTimeout(eraseTagline, 2000);
+            }
+        }
+
+        function eraseTagline() {
+            if (charIndex > 0) {
+                taglineElement.textContent = taglines[tagIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(eraseTagline, 50);
+            } else {
+                tagIndex = (tagIndex + 1) % taglines.length;
+                setTimeout(typeTagline, 500);
+            }
+        }
+        typeTagline();
+
+        document.getElementById('character-portrait').addEventListener('click', () => {
+            const avatar = document.getElementById('character-portrait');
+            avatar.style.transform = 'scale(1.1)';
+            setTimeout(() => avatar.style.transform = 'scale(1)', 200);
+        });
+
+        const toggleStats = document.getElementById('toggle-stats');
+        const statsPanel = document.getElementById('stats-panel');
+        const closeStats = document.getElementById('close-stats');
+
+        toggleStats.addEventListener('click', () => {
+            statsPanel.classList.toggle('active');
+            document.body.style.overflow = statsPanel.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        closeStats.addEventListener('click', () => {
+            statsPanel.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        statsPanel.addEventListener('transitionend', () => {
+            if (statsPanel.classList.contains('active')) {
+                document.querySelectorAll('.stat-fill').forEach(bar => {
+                    bar.style.width = bar.style.width;
+                });
+            }
+        });
+
+        document.querySelectorAll('.btn, .social-links a').forEach(btn => {
+            btn.addEventListener('touchstart', () => {
+                btn.style.transform = 'scale(0.95)';
+            });
+            btn.addEventListener('touchend', () => {
+                btn.style.transform = '';
+            });
+        });
+
+        const liveTimeElement = document.getElementById('live-time');
+        const liveDescElement = document.getElementById('live-desc');
+        const liveDateElement = document.getElementById('live-date');
+
+        function updateTimeline() {
+            const now = new Date();
+            liveTimeElement.textContent = now.toLocaleTimeString('vi-VN');
+            liveDateElement.textContent = now.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric' }).replace(/\//g, '/');
+        }
+        setInterval(updateTimeline, 1000);
+        updateTimeline();
+
+        const descList = [
+            'yo ! 🌸',
+            'Giờ vàng để code và ăn snack 😎',
+            'lúc bạn ngủ là lúc những dev code fix lỗi !',
+            'Scroll xuống nữa đi, còn nhiều cái hay nè!',
+            'Đang debug hay đang chill?',
+            'vừa học vừa code'
+        ];
+
+        function changeDesc() {
+            const random = Math.floor(Math.random() * descList.length);
+            liveDescElement.textContent = descList[random];
+        }
+        setInterval(changeDesc, 10000);
+        changeDesc();
+
+        document.addEventListener('contextmenu', e => {
+            e.preventDefault();
+            alert('Chuột phải đã bị vô hiệu hóa!');
+        });
+
+        document.addEventListener('keydown', e => {
+            if (
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+                (e.ctrlKey && e.shiftKey && e.key === 'C') ||
+                (e.ctrlKey && e.key === 'U')
+            ) {
+                e.preventDefault();
+                alert('DevTools đã bị chặn trên trang này!');
+            }
+        });
+
+        const moods = [
+            { text: "Đang code JavaScript 🚀", color: "#f0db4f", time: [9, 12] },
+            { text: "Mắc kẹt bug 🐛", color: "#ff5555", time: [14, 16] },
+            { text: "Nghe Lofi chill 🎧", color: "#0fc", time: [20, 23] },
+            { text: "Uống trà sữa 🥤", color: "#ff9ff3", time: [15, 15] }
+        ];
+
+        function updateMood() {
+            const now = new Date();
+            const hour = now.getHours();
+            const currentMood = moods.find(m => hour >= m.time[0] && hour <= m.time[1]) || 
+                            { text: "Vừa học vừa ăn snack 😎", color: "#ff69b4" };
+
+            const moodElement = document.getElementById("dev-mood");
+            moodElement.textContent = currentMood.text;
+            moodElement.style.color = currentMood.color;
+        }
+
+        updateMood();
+        setInterval(updateMood, 30 * 60 * 1000);
+
+        const themeToggle = document.getElementById("theme-toggle");
+        let isDarkMode = true;
+
+        function applyTheme() {
+            document.body.classList.add("theme-transition");
+            document.body.classList.toggle("light-mode", !isDarkMode);
+            
+            themeToggle.textContent = isDarkMode ? "🌙 Dark Mode" : "☀️ Light Mode";
+            
+            const mood = document.getElementById("dev-mood");
+            mood.textContent = isDarkMode ? "Chuyển sang mode cú đêm 🌙" : "Sáng rồi dậy thôi! ☀️";
+            mood.style.color = isDarkMode ? "#ff69b4" : "#89d4d4";
+            
+            setTimeout(() => updateMood(), 2000);
+            setTimeout(() => document.body.classList.remove("theme-transition"), 500);
+        }
+
+        themeToggle.addEventListener("click", () => {
+            isDarkMode = !isDarkMode;
+            localStorage.setItem("eddy-theme", isDarkMode ? "dark" : "light");
+            applyTheme();
+        });
+
+        if (localStorage.getItem("eddy-theme") === "light") {
+            isDarkMode = false;
+            applyTheme();
+        }
+
+        function updateNetworkStatus() {
+            const online = navigator.onLine;
+            const netText = online ? "📡 Online" : "🔴 Offline";
+            const netStatusEl = document.getElementById("dev-net") || document.getElementById("net-status");
+
+            if (netStatusEl) {
+                netStatusEl.textContent = netText;
+                if (netStatusEl.id === "net-status") {
+                    netStatusEl.classList.toggle("offline", !online);
+                    netStatusEl.textContent = online ? "🟢 Online" : "🔴 Offline - Đang mất kết nối...";
+                }
+            }
+        }
+        window.addEventListener("online", updateNetworkStatus);
+        window.addEventListener("offline", updateNetworkStatus);
+        updateNetworkStatus();
+
+        updateTheme(currentTheme);
+    }
+(function () {
+    const threshold = 160;
+
+    function killPage() {
+        document.body.innerHTML = "";
+        window.location.href = "about:blank";
+    }
+
+    function detectResize() {
+        if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+            killPage();
+        }
+    }
+
+    function detectDebug() {
+        const start = new Date();
+        debugger;
+        const end = new Date();
+        if (end - start > threshold) {
+            killPage();
+        }
+    }
+
+    function blockKeys(e) {
+        if (
+            e.keyCode === 123 || // F12
+            (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || // Ctrl+Shift+I or Ctrl+Shift+J
+            (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83)) // Ctrl+U or Ctrl+S
+        ) {
+            e.preventDefault();
+            killPage();
+        }
+    }
+
+    setInterval(detectResize, 500);
+    setInterval(detectDebug, 1000);
+    document.addEventListener('keydown', blockKeys);
+})();
+
+</script>
+ </body>
+ </html>

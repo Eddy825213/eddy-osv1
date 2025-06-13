@@ -1,0 +1,11 @@
+[
+    {
+        "first_name": "Admin",
+        "last_name": "User",
+        "name": "Admin User",
+        "email": "admin@example.com",
+        "password": "$2y$10$jnME1xUieamEOkqgzEgyxeyE73e\/D9yKKdBDTSQTNpFRWOQUMo.lG",
+        "registered_at": "2025-05-26 01:04:43",
+        "role": "admin"
+    }
+]
